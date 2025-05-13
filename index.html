@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing Packages with Toggle</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#dev-price-boxs">Pricing</a></li>
+            <li><a href="#dev-contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <img class="open-menu" src="images/icons8-hamburger-menu-100.png" alt="">
+            <img class="close-menu" src="images/icons8-cross-64.png" alt="">
+        </div>
+        <div class="mobile-links-box">
+            <ul class="m-nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#dev-price-boxs">Pricing</a></li>
+                <li><a href="#dev-contact">Contact</a></li>
+            </ul>
+        </div>
+        <a href="#" class="logo">LOGO</a>
+    </nav>
+
+    <section class="hero-banner-sec">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Fast & Reliable Web Hosting</h2>
+                <p>Launch your website with our lightning-fast cloud hosting platform designed for performance,
+                    security,
+                    and scalability.</p>
+                <div class="two-btn">
+                    <a id="open-pop-up">Get Offer</a>
+                    <a href="#dev-price-boxs"> View Plans</a>
+                </div>
+                <div class="hero-banner-img">
+                    <img src="images/hero.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feature-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="feature-content">
+                        <h4>Free migrations</h4>
+                        <p>Moving to HostSeba is easy, we'll take care of the migration for you for FREE</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature-content">
+                        <h4>24/7 support</h4>
+                        <p>Our team is always online 24/7 for your support and customer service.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature-content">
+                        <h4>Free Daily backup</h4>
+                        <p>We automatically create daily, weekly backups of your entire websites.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="feature-content">
+                        <h4>30 days guarantee</h4>
+                        <p>Give our high-speed hosting service a try completely risk-free! money back guarantee.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pop-up">
+        <div class="dv-content">
+            <img src="images/Buy It Amazon GIF by Pudgy Penguins.gif" alt="">
+            <h4>Get 50% OFF on your First Order!</h4>
+            <p>Buy now before it is too late!</p>
+            <button id="pop-up-close"><img src="images/icons8-cross-64.png" alt=""></button>
+        </div>
+    </section>
+
+
+    <section class="pp-sec">
+        <h1>Choose Your Plan</h1>
+
+        <div class="toggle-container" id="dev-price-boxs">
+            <span class="toggle-label monthly active">Monthly</span>
+            <label class="toggle-switch">
+                <input type="checkbox" id="billing-toggle">
+                <span class="slider"></span>
+            </label>
+            <span class="toggle-label yearly">Yearly</span>
+
+        </div>
+        <div class="dev-padd">
+            <span class="discount-badge">Save 20%</span>
+        </div>
+
+        <div class="pricing-container">
+            <!-- Basic Plan -->
+            <div class="pricing-card">
+                <h2 class="pricing-title">Basic</h2>
+                <div class="pricing-price monthly-price">$9.99 <span>/month</span></div>
+                <div class="pricing-price yearly-price hidden">$7.99 <span>/month</span></div>
+                <ul class="pricing-features">
+                    <li>10 Projects</li>
+                    <li>5 GB Storage</li>
+                    <li>Basic Support</li>
+                    <li>Email Assistance</li>
+                </ul>
+                <button class="pricing-button">Get Started</button>
+            </div>
+
+            <!-- Pro Plan (Popular) -->
+            <div class="pricing-card popular">
+                <div class="popular-tag">Popular</div>
+                <h2 class="pricing-title">Pro</h2>
+                <div class="pricing-price monthly-price">$19.99 <span>/month</span></div>
+                <div class="pricing-price yearly-price hidden">$15.99 <span>/month</span></div>
+                <ul class="pricing-features">
+                    <li>Unlimited Projects</li>
+                    <li>50 GB Storage</li>
+                    <li>Priority Support</li>
+                    <li>24/7 Chat Assistance</li>
+                    <li>Advanced Analytics</li>
+                </ul>
+                <button class="pricing-button">Get Started</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card">
+                <h2 class="pricing-title">Enterprise</h2>
+                <div class="pricing-price monthly-price">$49.99 <span>/month</span></div>
+                <div class="pricing-price yearly-price hidden">$39.99 <span>/month</span></div>
+                <ul class="pricing-features">
+                    <li>Unlimited Projects</li>
+                    <li>500 GB Storage</li>
+                    <li>24/7 Premium Support</li>
+                    <li>Dedicated Account Manager</li>
+                    <li>Custom Integrations</li>
+                    <li>API Access</li>
+                </ul>
+                <button class="pricing-button">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-box" id="dev-contact">
+        <div class="container">
+            <form class="contact-form">
+                <h2 class="form-title">Contact Us</h2>
+
+                <div class="form-group">
+                    <input type="text" class="form-input" id="name" placeholder=" ">
+                    <label for="name" class="form-label">Full Name</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="email" class="form-input" id="email" placeholder=" ">
+                    <label for="email" class="form-label">Email Address</label>
+                </div>
+
+                <div class="form-group">
+                    <input type="text" class="form-input" id="subject" placeholder=" ">
+                    <label for="subject" class="form-label">Subject</label>
+                </div>
+
+                <div class="form-group">
+                    <textarea class="form-input" id="message" placeholder=" "></textarea>
+                    <label for="message" class="form-label">Your Message</label>
+                </div>
+
+                <button type="submit" class="submit-btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="ftr-sec">
+        <div class="container">
+            <div class="ftr-box">
+                <div class="ftr-col">
+                    <a href="#"><img src="images/logo.svg" alt=""></a>
+                    <p>Office Address: Chuadanga Sadar, Digri,
+                        Chuadanga - 7200, Bangladesh</p>
+                </div>
+                <div class="ftr-col col-padd">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About US</a></li>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+                <div class="ftr-col col-padd">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#">About US</a></li>
+                        <li><a href="#">Why Choose Us</a></li>
+                        <li><a href="#">Testimonials</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <section class="copy-right-sec">
+        <div class="container">
+            <p>© Design and Developed by Akashbk201</p>
+        </div>
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
